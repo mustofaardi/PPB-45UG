@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Daftar Buah"
+        android:textSize="25dp"
+        android:textColor="@color/biru"
+        android:background="@color/kuning"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:text="Id              : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_id"
+        android:layout_toEndOf="@+id/textView_id"
+        android:layout_toRightOf="@+id/textView_id" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="25dp"
+        android:text="Buah        : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_buah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView_id"
+        android:layout_toRightOf="@+id/textView_id" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_year"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:text="Simpan"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_update"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Lihat"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_add"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Ubah"
+            android:textSize="10dp" />
+
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_viewAll"
+            android:layout_alignStart="@+id/button_viewAll"
+            android:layout_alignLeft="@+id/button_viewAll"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Hapus"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
