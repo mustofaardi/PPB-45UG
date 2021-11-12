@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMakananActivity">
+
+    <TextView
+        android:id="@+id/tv_mkn_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nama_makanan"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_mkn_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mkn_nama"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="18dp"
+        android:text="@string/detail" />
+
+    <TextView
+        android:id="@+id/tv_mkn_harga"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mkn_nama"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="15dp"
+        android:text="@string/harga" />
+
+</RelativeLayout>
